@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "notebook-frontend"
-version = "7.4.2"
+version = "7.4.2.post1"
 description = "A Python package distributing Notebook's static assets"
 readme = "README.md"
 authors = [
@@ -24,8 +24,9 @@ classifiers = [
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
 ]
-requires-python = ">= 3.9"
-
+dependencies = [
+  "jupyterlab-js==4.4.2.post2",
+]
 [project.urls]
 Source = "https://github.com/davidbrochart/notebook-frontend"
 
@@ -35,6 +36,10 @@ include = ["src/notebook_frontend"]
 [tool.hatch.build.targets.wheel]
 ignore-vcs = true
 packages = ["src/notebook_frontend"]
+artifacts = [
+    "src/notebook_frontend/static",
+    "src/notebook_frontend/templates",
+]
 
 [tool.hatch.build.targets.wheel.shared-data]
-"share/jupyter/lab" = "share/jupyter/lab"
+"share/jupyter" = "share/jupyter"

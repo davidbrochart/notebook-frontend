@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "notebook-frontend"
-version = "7.5.4"
+version = "7.5.5"
 description = "A Python package distributing Notebook's static assets"
 readme = "README.md"
 authors = [
@@ -25,7 +25,7 @@ classifiers = [
     "Programming Language :: Python :: 3.14",
 ]
 dependencies = [
-  "jupyterlab-js>=4.5.4,<4.5.5",
+  "jupyterlab-js>=4.5.5,<4.5.6",
 ]
 [project.urls]
 Source = "https://github.com/davidbrochart/notebook-frontend"

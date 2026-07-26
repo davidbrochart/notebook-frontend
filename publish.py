@@ -20,7 +20,7 @@ with open("pyproject.toml", "rt") as f:
 
 with open("pyproject.toml", "wt") as f:
     data["project"]["version"] = version
-    data["dependencies"] = [f"jupyterlab-js=={jupyterlab_version}"]
+    data["project"]["dependencies"] = [f"jupyterlab-js=={jupyterlab_version}"]
     toml.dump(data, f)
 
 check_output("hatch build".split())

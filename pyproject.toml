@@ -4,11 +4,11 @@ build-backend = "hatchling.build"
 
 [project]
 name = "notebook-frontend"
-version = "7.6.1.post0"
+version = "7.6.2"
 description = "A Python package distributing Notebook's static assets"
 readme = "README.md"
 classifiers = [ "Development Status :: 4 - Beta", "Intended Audience :: Developers", "License :: OSI Approved :: BSD License", "Typing :: Typed", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: 3.13", "Programming Language :: Python :: 3.14",]
-dependencies = [ "jupyterlab-js==4.6.1",]
+dependencies = [ "jupyterlab-js==4.6.2",]
 [[project.authors]]
 name = "David Brochart"
 email = "david.brochart@gmail.com"
